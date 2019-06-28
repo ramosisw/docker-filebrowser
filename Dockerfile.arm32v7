@@ -1,4 +1,4 @@
-FROM arm32v7/alpine:3.7
+FROM arm32v7/alpine
 RUN apk add curl bash git
 RUN curl -fsSL https://filebrowser.github.io/get.sh | bash
 RUN mkdir /config
