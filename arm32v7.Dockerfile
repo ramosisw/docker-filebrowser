@@ -5,8 +5,8 @@ RUN set DOCKER_ARCH=armv7
 RUN apk add curl bash git
 
 COPY filebrowser.sh filebrowser.sh
-RUN chmod +x filebrowser.sh
-RUN filebrowser.sh
+RUN chmod +x /filebrowser.sh
+RUN /filebrowser.sh
 
 FROM base as final
 COPY --from=build /usr/bin/filebrowser /usr/bin/filebrowser
