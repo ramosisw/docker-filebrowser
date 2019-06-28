@@ -1,5 +1,4 @@
 FROM arm32v7/alpine as base
-RUN apk add curl bash git
 
 FROM alpine as build
 RUN set DOCKER_ARCH=armv7
