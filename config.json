@@ -1,8 +1,8 @@
 {
   "port": 80,
-  "baseURL": "",
-  "address": "",
+  "baseURL": "/",
+  "address": "0.0.0.0",
   "log": "stdout",
-  "database": "/db/database.db",
-  "root": "/srv"
+  "database": "/etc/filebrowser/db/database.db",
+  "root": "/filebrowser"
 }

@@ -1,7 +1,7 @@
-FROM arm32v7/alpine as base
+FROM amd64/alpine as base
 
 FROM alpine as build
-ENV DOCKER_ARCH=armv7
+ENV DOCKER_ARCH=amd64
 RUN apk add curl bash
 
 COPY filebrowser.sh filebrowser.sh
